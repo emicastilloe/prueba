@@ -33,7 +33,7 @@
                 //Yo revisaría cómo se usa la siguiente x en la línea 36 
                 x = Math.floor(random(0,(datosArreglados.length)-1));
                console.log(x);
-               createElement("h1", "¿Quieres dibujar a <a href='"+ datosArreglados[x].img +"' target='_blank'>" + datosArreglados[x].name + "</a>").parent("instruccion");
+               createElement("h1", "¿Quieres dibujar a <x href='"+ datosArreglados[x].img +"' target='_blank'>" + datosArreglados[x].name + "</x>").parent("instruccion");
                 select("#title").html("NombreDelDigimon");
                 select("#time").html(lasHoras + ":" + losMinutos);
                 select("#level").html("NivelDelDigimon");
