@@ -34,13 +34,13 @@
                 background("#ddd");
             }
 
-            function draw() {
-                stroke(elColor.color());
-                strokeWeight(elSlider.value());
-                if (mouseIsPressed) {
-                line(pmouseX, pmouseY, mouseX, mouseY);
-                }
-            }
+               function draw() {
+               stroke(elColor.color());
+               strokeWeight(elSlider.value());
+               if (mouseIsPressed) {
+              line(pmouseX, pmouseY, mouseX, mouseY);
+    }
+}
 
             function descargador() {
                 saveCanvas(palabra_pasada, "jpg");
