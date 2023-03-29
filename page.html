@@ -24,10 +24,10 @@
             function setup() {
                 var title = select("header");
                 createElement("h1", "Aceptaste dibujar a " + palabra_pasada).parent(title);
-                var descarga = select("#descargar");
+                var descarga = select("#descarga");
                descarga.mousePressed(artemania);
-                var borra = select("#borra");
-                descarga.mousePressed(borrador);
+                var borrar = select("#borra");
+                borrar.mousePressed(borrador);
                 elColor = createColorPicker("#000000").parent("controles");
                 elSlider = createSlider(1, 5, 3).parent("controles");
                 createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
