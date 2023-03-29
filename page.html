@@ -22,13 +22,13 @@
             var elSlider;
             
 
-            function setup() {
+              function setup() {
                 var title = select("header");
                 createElement("h1", "Aceptaste dibujar a " + palabra_pasada).parent(title);
-                var descargar = select("#descarga");
-                descargar.mousePressed(artemania);
-                var borrarTodo = select("#borra");
-                borrarTodo.mousePressed(borrador);
+                var descarga = select("#descargar");
+                descarga.mousePressed(artemania);
+                var borra = select("#borrar");
+                borra.mousePressed(borrador);
                 elColor = createColorPicker("#000000").parent("controles");
                 elSlider = createSlider(1, 5, 3).parent("controles");
                 createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
@@ -36,12 +36,12 @@
             }
 
                function draw() {
-               stroke(elColor.color());
-               strokeWeight(elSlider.value());
-               if (mouseIsPressed) {
-              line(pmouseX, pmouseY, mouseX, mouseY);
-    }
-}
+                stroke(elColor.color());
+                strokeWeight(elSlider.value());
+                if (mouseIsPressed) {
+               line(pmouseX, pmouseY, mouseX, mouseY);
+                }
+           }
 
             function artemania() {
                 saveCanvas("palabra_pasada", "jpg");
